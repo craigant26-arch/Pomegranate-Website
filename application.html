@@ -1,0 +1,246 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Tenancy Application – Pomegranate Property Management</title>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600;700&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+  <!-- Navbar -->
+  <nav class="navbar">
+    <div class="nav-container">
+      <a href="index.html" class="logo">Pomegranate <span>Properties</span></a>
+
+      <ul class="nav-links">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="for-rent.html">For Rent</a></li>
+        <li><a href="coming-soon.html">Coming Soon</a></li>
+        <li><a href="insights.html">Insights</a></li>
+        <li><a href="application.html" class="active">Application</a></li>
+      </ul>
+
+      <div class="hamburger">
+        <span></span>
+        <span></span>
+        <span></span>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Hero -->
+  <section class="hero hero-subpage">
+    <div class="hero-content">
+      <h1>Tenancy Application</h1>
+      <p>Apply online for your next home – quick, secure, and straightforward</p>
+    </div>
+  </section>
+
+  <!-- Application Form -->
+  <section class="services">
+    <div class="form-container">
+      <h2 class="section-title">Your Application</h2>
+      <p class="form-intro">Please complete the form below. All information is treated confidentially and used only for assessing your tenancy application.</p>
+
+      <form id="tenancy-form" class="application-form" action="#" method="POST">
+
+        <!-- Personal Details -->
+        <fieldset>
+          <legend>Personal Details</legend>
+          <div class="form-row">
+            <div class="form-group">
+              <label for="full-name">Full Name *</label>
+              <input type="text" id="full-name" name="full-name" required>
+            </div>
+            <div class="form-group">
+              <label for="email">Email Address *</label>
+              <input type="email" id="email" name="email" required>
+            </div>
+          </div>
+
+          <div class="form-row">
+            <div class="form-group">
+              <label for="phone">Phone Number *</label>
+              <input type="tel" id="phone" name="phone" required>
+            </div>
+            <div class="form-group">
+              <label for="dob">Date of Birth *</label>
+              <input type="date" id="dob" name="dob" required>
+            </div>
+          </div>
+
+          <div class="form-group full-width">
+            <label for="current-address">Current Address *</label>
+            <textarea id="current-address" name="current-address" rows="3" required></textarea>
+          </div>
+        </fieldset>
+
+        <!-- Employment / Income -->
+        <fieldset>
+          <legend>Employment & Income</legend>
+          <div class="form-row">
+            <div class="form-group">
+              <label for="employment-status">Employment Status *</label>
+              <select id="employment-status" name="employment-status" required>
+                <option value="">Select...</option>
+                <option value="employed">Employed (Full-time)</option>
+                <option value="employed-part">Employed (Part-time)</option>
+                <option value="self-employed">Self-Employed</option>
+                <option value="retired">Retired</option>
+                <option value="unemployed">Unemployed</option>
+                <option value="student">Student</option>
+                <option value="other">Other</option>
+              </select>
+            </div>
+            <div class="form-group">
+              <label for="employer">Employer / Business Name</label>
+              <input type="text" id="employer" name="employer">
+            </div>
+          </div>
+
+          <div class="form-group">
+            <label for="monthly-income">Monthly Net Income (£) *</label>
+            <input type="number" id="monthly-income" name="monthly-income" min="0" required>
+          </div>
+        </fieldset>
+
+        <fieldset>
+  <legend>Tenancy Preferences</legend>
+
+  <div class="form-row">
+    <div class="form-group">
+      <label for="preferred-location">Preferred Location *</label>
+      <select id="preferred-location" name="preferred-location" required>
+        <option value="">Select...</option>
+        <option value="liverpool">Liverpool</option>
+        <option value="barrow">Barrow-in-Furness</option>
+        <option value="carlisle">Carlisle</option>
+        <option value="any">Any of the above</option>
+      </select>
+    </div>
+
+    <div class="form-group">
+      <label for="desired-address">Desired Property / Address (if known)</label>
+      <input type="text" id="desired-address" name="desired-address" 
+             placeholder="e.g. 12 Oakwood Grove, Carlisle or Coming Soon listing #3">
+    </div>
+  </div>
+
+  <div class="form-row">
+    <div class="form-group">
+      <label for="move-in-date">Intended Move-in Date *</label>
+      <input type="date" id="move-in-date" name="move-in-date" required>
+    </div>
+
+    <div class="form-group">
+      <label for="tenants">Number of People Moving In *</label>
+      <input type="number" id="tenants" name="tenants" min="1" max="10" required>
+    </div>
+  </div>
+</fieldset>
+       
+
+        <!-- Submit -->
+        <div class="form-submit">
+          <button type="submit" class="btn">Submit Application</button>
+          <p class="form-note">* Required fields. We will contact you within 2 working days.</p>
+        </div>
+      </form>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="footer-container">
+      <div class="footer-column logo-column">
+        <a href="index.html" class="footer-logo">Pomegranate <span>Properties</span></a>
+        <p class="footer-tagline">Premium property management with a personal touch.</p>
+        <div class="social-icons">
+          <a href="#" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+          <a href="#" aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+          <a href="#" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+        </div>
+      </div>
+
+      <div class="footer-column">
+        <h4>Quick Links</h4>
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="for-rent.html">For Rent</a></li>
+          <li><a href="coming-soon.html">Coming Soon</a></li>
+          <li><a href="#">Insights</a></li>
+          <li><a href="tenancy-application.html">Application</a></li>
+        </ul>
+      </div>
+
+      <div class="footer-column">
+        <h4>Contact Us</h4>
+        <ul class="contact-list">
+          <li><i class="fas fa-envelope"></i> info@pomprop.co.uk</li>
+          <li><i class="fas fa-phone"></i> +44 (0)20 1234 5678</li>
+          <li><i class="fas fa-map-marker-alt"></i> Liverpool • Barrow-in-Furness • Carlisle</li>
+        </ul>
+      </div>
+
+      <div class="footer-column newsletter-column">
+        <h4>Stay Updated</h4>
+        <p>Subscribe to our newsletter for the latest properties and insights.</p>
+        <form class="newsletter-form">
+          <input type="email" placeholder="Your email address" required>
+          <button type="submit" class="btn btn-small">Subscribe</button>
+        </form>
+      </div>
+    </div>
+
+    <div class="footer-bottom">
+      <p>© <span id="year"></span> Pomegranate Property Management. All rights reserved.</p>
+      <div class="legal-links">
+        <a href="#">Privacy Policy</a> | <a href="#">Terms of Service</a> | <a href="#">Cookie Policy</a>
+      </div>
+    </div>
+  </footer>
+
+  <script>
+    // Hamburger menu (same as other pages)
+    const hamburger = document.querySelector('.hamburger');
+    const navLinks = document.querySelector('.nav-links');
+
+    hamburger.addEventListener('click', () => {
+      navLinks.classList.toggle('active');
+      
+      if (navLinks.classList.contains('active')) {
+        hamburger.innerHTML = 
+          '<span style="transform: rotate(45deg) translate(5px, 5px);"></span>' +
+          '<span style="opacity: 0;"></span>' +
+          '<span style="transform: rotate(-45deg) translate(7px, -6px);"></span>';
+      } else {
+        hamburger.innerHTML = '<span></span><span></span><span></span>';
+      }
+    });
+
+    document.querySelectorAll('.nav-links a').forEach(link => {
+      link.addEventListener('click', () => {
+        navLinks.classList.remove('active');
+        hamburger.innerHTML = '<span></span><span></span><span></span>';
+      });
+    });
+
+    // Copyright year
+    document.getElementById('year').textContent = new Date().getFullYear();
+
+    // Basic form submission feedback (placeholder)
+    document.getElementById('tenancy-form').addEventListener('submit', function(e) {
+      e.preventDefault();
+      alert('Thank you! Your application has been submitted. We will contact you soon.');
+      this.reset();
+    });
+  </script>
+</body>
+</html>

@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Properties for Rent - Pomegranate Property Management</title>
+  
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600;700&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+  
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+  <!-- Navbar -->
+  <nav class="navbar">
+    <div class="nav-container">
+      <a href="index.html" class="logo">Pomegranate <span>Properties</span></a>
+      
+      <ul class="nav-links">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="for-rent.html" class="active">For Rent</a></li>
+        <li><a href="coming-soon.html">Coming Soon</a></li>
+        <li><a href="insights.html">Insights</a></li>
+        <li><a href="application.html">Application</a></li>
+      </ul>
+
+      <div class="hamburger">
+        <span></span>
+        <span></span>
+        <span></span>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Sub-page Hero -->
+  <section class="hero hero-subpage">
+    <div class="hero-content">
+      <h1>Properties For Rent</h1>
+      <p>Discover premium rental homes in Liverpool, Barrow-in-Furness, and Carlisle</p>
+    </div>
+  </section>
+
+  <!-- Locations Section -->
+  <section class="services">  <!-- Reusing .services class from homepage for consistent padding/background -->
+    <h2 class="section-title">Our Locations</h2>
+    <div class="cards-grid">  <!-- Reusing .cards-grid but with column direction -->
+
+      <!-- Liverpool -->
+      <div class="card">
+        <div class="card-img" style="background-image: url('images/pexels-mikebirdy-13517892.jpg');"></div>
+        <div class="card-content">
+          <h3>Liverpool</h3>
+          <p>Discover vibrant city living with stylish apartments and family homes in prime Liverpool locations.</p>
+          <a href="for-rent-liverpool.html" class="btn">Explore</a>
+        </div>
+      </div>
+
+      <!-- Barrow-in-Furness -->
+      <div class="card">
+        <div class="card-img" style="background-image: url('images/pexels-olgalioncat-7244514.jpg');"></div>
+        <div class="card-content">
+          <h3>Barrow-in-Furness</h3>
+          <p>Coastal and peaceful properties with easy access to the Lake District – perfect for relaxed living.</p>
+          <a href="for-rent-barrow.html" class="btn">Explore</a>
+        </div>
+      </div>
+
+      <!-- Carlisle -->
+      <div class="card">
+        <div class="card-img" style="background-image: url('/images/pexels-petra-nesti-1766376-32770842.jpg');"></div>
+        <div class="card-content">
+          <h3>Carlisle / Workington</h3>
+          <p>Scenic and characterful homes in historic Carlisle and surrounding areas.</p>
+          <a href="#" class="btn">Explore</a>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+    <!-- Footer -->
+  <footer class="footer">
+    <div class="footer-container">
+      <div class="footer-column logo-column">
+        <a href="#" class="footer-logo">Pomegranate <span>Properties</span></a>
+        <p class="footer-tagline">Premium property management with a personal touch.</p>
+        <div class="social-icons">
+          <a href="#" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+          <a href="#" aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+          <a href="#" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+        </div>
+      </div>
+
+      <div class="footer-column">
+        <h4>Quick Links</h4>
+        <ul>
+          <li><a href="#">Home</a></li>
+          <li><a href="for-rent.html">For Rent</a></li>
+          <li><a href="#">Coming Soon</a></li>
+          <li><a href="#">Insights</a></li>
+          <li><a href="#">Contact</a></li>
+        </ul>
+      </div>
+
+      <div class="footer-column">
+        <h4>Contact Us</h4>
+        <ul class="contact-list">
+          <li><i class="fas fa-envelope"></i>info@pomprop.co.uk</li>
+          <li><i class="fas fa-phone"></i> +44 (0)20 1234 5678</li>
+          <li><i class="fas fa-map-marker-alt"></i> London • Manchester • Edinburgh</li>
+        </ul>
+      </div>
+
+      <div class="footer-column newsletter-column">
+        <h4>Stay Updated</h4>
+        <p>Subscribe to our newsletter for the latest properties and insights.</p>
+        <form class="newsletter-form">
+          <input type="email" placeholder="Your email address" required>
+          <button type="submit" class="btn btn-small">Subscribe</button>
+        </form>
+      </div>
+    </div>
+
+    <div class="footer-bottom">
+      <p>&copy; <span id="year"></span> Pomegranate Property Management. All rights reserved.</p>
+      <div class="legal-links">
+        <a href="#">Privacy Policy</a> | <a href="#">Terms of Service</a> | <a href="#">Cookie Policy</a>
+      </div>
+    </div>
+  </footer>
+
+  <script>
+    const hamburger = document.querySelector('.hamburger');
+    const navLinks = document.querySelector('.nav-links');
+
+    hamburger.addEventListener('click', () => {
+      navLinks.classList.toggle('active');
+      
+      if (navLinks.classList.contains('active')) {
+        hamburger.innerHTML = 
+          '<span style="transform: rotate(45deg) translate(5px, 5px);"></span>' +
+          '<span style="opacity: 0;"></span>' +
+          '<span style="transform: rotate(-45deg) translate(7px, -6px);"></span>';
+      } else {
+        hamburger.innerHTML = '<span></span><span></span><span></span>';
+      }
+    });
+
+    // Close mobile menu when clicking a link
+    document.querySelectorAll('.nav-links a').forEach(link => {
+      link.addEventListener('click', () => {
+        navLinks.classList.remove('active');
+        hamburger.innerHTML = '<span></span><span></span><span></span>';
+      });
+    });
+  </script>
+</body>
+</html>

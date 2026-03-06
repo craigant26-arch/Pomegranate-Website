@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Coming Soon – Pomegranate Property Management</title>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600;700&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+  <!-- Navbar -->
+  <nav class="navbar">
+    <div class="nav-container">
+      <a href="index.html" class="logo">Pomegranate <span>Properties</span></a>
+
+      <ul class="nav-links">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="for-rent.html">For Rent</a></li>
+        <li><a href="coming-soon.html" class="active">Coming Soon</a></li>
+        <li><a href="insights.html">Insights</a></li>
+        <li><a href="application.html">Application</a></li>
+      </ul>
+
+      <div class="hamburger">
+        <span></span>
+        <span></span>
+        <span></span>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Hero – sub-page style -->
+  <section class="hero hero-subpage">
+    <div class="hero-content">
+      <h1>Coming Soon</h1>
+      <p>Exclusive new properties arriving shortly – be the first to know</p>
+    </div>
+  </section>
+
+  <!-- Coming Soon Properties -->
+  <section class="services">
+    <h2 class="section-title">Upcoming Properties</h2>
+
+    <div class="cards-grid">
+
+      <!-- Property 1 -->
+      <div class="card">
+        <div class="card-img" style="background-image: url('https://www.hackrea.net/wp-content/uploads/2026/01/organic-modern-home-exterior-sage-green-siding-stone-skirt.jpg');"></div>
+        <div class="card-content">
+          <h3>12 Oakwood Grove, Carlisle CA2 5RT</h3>
+          <p class="property-specs">4 Bedrooms • 2 Bathrooms • 2 Reception Rooms</p>
+          <p>Stunning modern family home with open-plan living, high-spec kitchen, and landscaped garden. Expected completion: Q2 2026.</p>
+          <a href="#" class="btn">Notify Me</a>
+        </div>
+      </div>
+
+      <!-- Property 2 -->
+      <div class="card">
+        <div class="card-img" style="background-image: url('https://hips.hearstapps.com/hmg-prod/images/house-tour-giannetti-los-angeles-exterior-jpg-1644957175.jpg?crop=0.8882618510158014xw:1xh;center,top&resize=1200:*');"></div>
+        <div class="card-content">
+          <h3>8 Lakeside View, Barrow-in-Furness LA14 3PQ</h3>
+          <p class="property-specs">3 Bedrooms • 2 Bathrooms • 1 Reception Room</p>
+          <p>Contemporary coastal retreat with sea views, private terrace, and premium finishes. Register your interest early.</p>
+          <a href="#" class="btn">Notify Me</a>
+        </div>
+      </div>
+
+      <!-- Property 3 -->
+      <div class="card">
+        <div class="card-img" style="background-image: url('https://a0.muscache.com/im/pictures/hosting/Hosting-1442170634039859037/original/af527f03-496d-40df-90b2-4ab49947bccc.jpeg?im_w=720');"></div>
+        <div class="card-content">
+          <h3>45 Mersey Heights, Liverpool L3 4FP</h3>
+          <p class="property-specs">2 Bedrooms • 2 Bathrooms • 1 Reception Room</p>
+          <p>Luxury city apartment with balcony, concierge, and river views. Limited availability – coming soon.</p>
+          <a href="#" class="btn">Notify Me</a>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- Footer (same as home page) -->
+  <footer class="footer">
+    <div class="footer-container">
+      <div class="footer-column logo-column">
+        <a href="index.html" class="footer-logo">Pomegranate <span>Properties</span></a>
+        <p class="footer-tagline">Premium property management with a personal touch.</p>
+        <div class="social-icons">
+          <a href="#" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+          <a href="#" aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+          <a href="#" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+        </div>
+      </div>
+
+      <div class="footer-column">
+        <h4>Quick Links</h4>
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="for-rent.html">For Rent</a></li>
+          <li><a href="coming-soon.html">Coming Soon</a></li>
+          <li><a href="#">Insights</a></li>
+          <li><a href="#">Contact</a></li>
+        </ul>
+      </div>
+
+      <div class="footer-column">
+        <h4>Contact Us</h4>
+        <ul class="contact-list">
+          <li><i class="fas fa-envelope"></i> info@pomprop.co.uk</li>
+          <li><i class="fas fa-phone"></i> +44 (0)20 1234 5678</li>
+          <li><i class="fas fa-map-marker-alt"></i> Liverpool • Barrow-in-Furness • Carlisle</li>
+        </ul>
+      </div>
+
+      <div class="footer-column newsletter-column">
+        <h4>Stay Updated</h4>
+        <p>Subscribe to our newsletter for the latest properties and insights.</p>
+        <form class="newsletter-form">
+          <input type="email" placeholder="Your email address" required>
+          <button type="submit" class="btn btn-small">Subscribe</button>
+        </form>
+      </div>
+    </div>
+
+    <div class="footer-bottom">
+      <p>© <span id="year"></span> Pomegranate Property Management. All rights reserved.</p>
+      <div class="legal-links">
+        <a href="#">Privacy Policy</a> | <a href="#">Terms of Service</a> | <a href="#">Cookie Policy</a>
+      </div>
+    </div>
+  </footer>
+
+  <script>
+    // Hamburger menu toggle (same as home page)
+    const hamburger = document.querySelector('.hamburger');
+    const navLinks = document.querySelector('.nav-links');
+
+    hamburger.addEventListener('click', () => {
+      navLinks.classList.toggle('active');
+      
+      if (navLinks.classList.contains('active')) {
+        hamburger.innerHTML = 
+          '<span style="transform: rotate(45deg) translate(5px, 5px);"></span>' +
+          '<span style="opacity: 0;"></span>' +
+          '<span style="transform: rotate(-45deg) translate(7px, -6px);"></span>';
+      } else {
+        hamburger.innerHTML = '<span></span><span></span><span></span>';
+      }
+    });
+
+    document.querySelectorAll('.nav-links a').forEach(link => {
+      link.addEventListener('click', () => {
+        navLinks.classList.remove('active');
+        hamburger.innerHTML = '<span></span><span></span><span></span>';
+      });
+    });
+
+    // Copyright year
+    document.getElementById('year').textContent = new Date().getFullYear();
+  </script>
+</body>
+</html>
